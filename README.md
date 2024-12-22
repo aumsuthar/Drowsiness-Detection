@@ -28,3 +28,15 @@ This project implements a real-time drowsiness detection system using Python, Op
 1. **Install Required Libraries**:
    ```bash
    pip install opencv-python dlib pyttsx3 scipy
+   
+2. **Install CMake**
+
+Dlib requires CMake to compile. Install it as follows:
+	•	Windows: Download and install CMake.
+ ```bash
+ brew install cmake
+•	Linux:
+ ```bash
+  sudo apt update
+  sudo apt install cmake
+
