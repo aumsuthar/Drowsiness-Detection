@@ -1,12 +1,16 @@
 # Drowsiness Detection System
 
-This project implements a real-time drowsiness detection system using Python, OpenCV, and Dlib. It detects the eye aspect ratio (EAR) to determine if the user's eyes are closed for a prolonged period, triggering an alert through text-to-speech if drowsiness is detected.
+This project implements a real-time drowsiness detection system using Python, OpenCV, and Dlib. It calculates the eye aspect ratio (EAR) to determine if the user's eyes are closed for a prolonged period, triggering an alert through text-to-speech.
+
+---
 
 ## Features
-- **Real-Time Face Detection**: Utilizes Dlib's face detection model to identify faces in the video feed.
-- **Eye Aspect Ratio (EAR) Calculation**: Detects and calculates EAR to assess eye closure.
-- **Drowsiness Detection**: Alerts the user via audio when drowsiness is detected.
-- **Multi-threaded Frame Capture**: Enhances performance by using threading for video frame capture.
+- **Real-Time Face Detection**: Uses Dlib's pre-trained model for face and eye detection.
+- **Eye Aspect Ratio (EAR) Calculation**: Monitors eye closure to detect drowsiness.
+- **Drowsiness Detection**: Alerts the user with an audio warning.
+- **Threaded Frame Capture**: Uses threading to enhance performance.
+
+---
 
 ## Prerequisites
 - Python 3.x
@@ -15,10 +19,12 @@ This project implements a real-time drowsiness detection system using Python, Op
   - Dlib
   - Pyttsx3
   - Scipy
-- A webcam for video feed
-- `shape_predictor_68_face_landmarks.dat` file for Dlib (place it in the appropriate directory and update the path in the code).
+- A webcam for live video feed.
+- `shape_predictor_68_face_landmarks.dat` file for Dlib's landmark prediction.
 
-## Installation
-1. Install the required libraries:
+---
+
+## Installation and Setup
+1. **Install Required Libraries**:
    ```bash
    pip install opencv-python dlib pyttsx3 scipy
